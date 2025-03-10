@@ -1,0 +1,126 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #fff5e6;
+  background-image: linear-gradient(135deg, #fff5e6 0%, #ffe0b2 100%);
+}
+
+.signup-form {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 152, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid rgba(255, 152, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ffe0b2;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #fff9f0;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff9800;
+  box-shadow: 0 0 0 3px rgba(255, 152, 0, 0.15);
+  background-color: white;
+}
+
+input::placeholder {
+  color: #666;
+  opacity: 0.6;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.2);
+}
+
+button:hover {
+  background-color: #f57c00;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.message {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #fff3e0;
+  color: #f57c00;
+  font-weight: 500;
+  border: 1px solid rgba(255, 152, 0, 0.2);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-form {
+    padding: 25px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+} 

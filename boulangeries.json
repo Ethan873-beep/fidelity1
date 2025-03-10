@@ -1,0 +1,22 @@
+{
+  "boulangeries": [
+    {
+      "id": "BAK001",
+      "nom": "Boulangerie du Coin",
+      "adresse": "123 Rue de Paris",
+      "pointsParScan": 10
+    },
+    {
+      "id": "BAK002",
+      "nom": "La Mie Dorée",
+      "adresse": "45 Avenue des Champs",
+      "pointsParScan": 10
+    },
+    {
+      "id": "BAK003",
+      "nom": "Le Pain Tradition",
+      "adresse": "78 Boulevard Central",
+      "pointsParScan": 10
+    }
+  ]
+} 
