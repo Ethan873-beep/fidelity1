@@ -2,10 +2,19 @@ services:
   - type: web
     name: fidelity-backend
     env: node
+    region: frankfurt
     buildCommand: npm install
     startCommand: npm start
     envVars:
       - key: PORT
-        value: 5001
+        value: 10000
       - key: NODE_ENV
-        value: production 
+        value: production
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_SHEET_ID
+        sync: false
+      - key: GOOGLE_SERVICE_ACCOUNT_EMAIL
+        sync: false
+      - key: GOOGLE_PRIVATE_KEY
+        sync: false 
