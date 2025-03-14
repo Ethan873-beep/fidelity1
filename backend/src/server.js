@@ -8,7 +8,7 @@ const scanRoutes = require('./routes/scan');
 const googleSheets = require('./services/googleSheets');
 
 const app = express();
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 10000;
 
 // Middleware
 app.use(cors());
@@ -35,6 +35,7 @@ const initializeApp = async () => {
 
 // Démarrage du serveur
 app.listen(port, () => {
-  console.log(`Serveur démarré sur le port ${port}`);
+  console.log(`Serveur démarré sur http://localhost:${port}`);
+  console.log('Environnement:', process.env.NODE_ENV);
   initializeApp();
 }); 
