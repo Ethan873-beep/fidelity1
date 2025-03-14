@@ -88,4 +88,32 @@ router.get('/boulangerie/:id', async (req, res) => {
   }
 });
 
+// Route pour l'inscription des clients
+router.post('/client', async (req, res) => {
+  try {
+    const { nom, email } = req.body;
+    
+    if (!nom || !email) {
+      return res.status(400).json({
+        success: false,
+        error: 'Le nom et l\'email sont requis'
+      });
+    }
+
+    const clientId = await googleSheets.addClient(nom, email);
+    
+    res.json({
+      success: true,
+      clientId,
+      message: 'Client inscrit avec succès'
+    });
+  } catch (error) {
+    console.error('Erreur lors de l\'inscription:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Erreur lors de l\'inscription'
+    });
+  }
+});
+
 module.exports = router; 

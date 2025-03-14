@@ -17,4 +17,6 @@ services:
       - key: GOOGLE_SERVICE_ACCOUNT_EMAIL
         sync: false
       - key: GOOGLE_PRIVATE_KEY
-        sync: false 
+        sync: false
+      - key: REACT_APP_API_URL
+        value: https://fidelity-backend.onrender.com 
